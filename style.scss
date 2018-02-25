@@ -75,16 +75,42 @@ h2 {
   }
 }
 
-.phones {
+.contact, .contact2 {
   display:flex;
   border-top:2px solid #333;
-  border-bottom:2px solid #333;
-  margin:30px 0;
+  margin:30px 0 0;
   padding:30px 0;
   & > * {
     width:50%;
   }
+  @media (max-width: 1000px){
+    flex-wrap: wrap;
+    border-top:0;
+    margin:0;
+    padding:0;
+  }
 }
+
+.contact2 {
+  margin:0 0;
+}
+
+.contact .contact__item:first-child {
+  @media (max-width: 1000px){
+      border-top:0;
+      margin-top:30px;
+    }
+}
+
+.contact__item {
+  @media (max-width: 1000px){
+    width:90vw;
+    padding:30px 0;
+    border-top:2px solid #333;
+
+  }
+}
+
 
 h3 {
   margin:0;

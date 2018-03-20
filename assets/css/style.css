@@ -276,6 +276,8 @@ footer {
     .page-content {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse; } }
+  .page-content a {
+    color: #0071bc; }
 
 .photo-illustration {
   width: 50%; }

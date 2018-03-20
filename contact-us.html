@@ -25,18 +25,18 @@
       <meta name="theme-color" content="#ffffff">
 
       <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i" rel="stylesheet">
-      <link rel="stylesheet" href="/assets/css/style.min.css?c=02">
+      <link rel="stylesheet" href="/assets/css/style.min.css?c=01">
   </head>
   <body class="home">
     <header>
       <div class="title">
-        <h2 class="site-title">Tesser Mediation</h2>
+        <h2 class="site-title"><a href="index.html">Tesser Mediation</a></h2>
         <p>Louis Tesser / Family Law Mediator / <a href="tel:678.984.3088">678.984.3088</a></p>
       </div>
       <nav>
         <ul class="nav1 unlist">
           <li><a href="https://calendly.com/tessermediation" class="action-nav">Make an Appointment</a></li>
-          <li><a href="contact-us.html" class="action-nav">Contact Us</a></li>
+          <li><a href="contact-us.html" class="action-nav active">Contact Us</a></li>
         </ul>
         <ul class="nav2 unlist">
           <li><a href="what-is-mediation.html">What is Mediation?</a></li>
@@ -46,11 +46,32 @@
       </nav>
     </header>
 
-    <section class="photo-intro">
-      <div class="photo-intro__text">
-        Effective, intelligent mediation backed by twenty years of experience as a family lawyer.
+    <section class="page-content">
+      <div class="photo-illustration">
+        <figure><img src="/assets/images/contact-1.jpg" alt="Louis Tesser" /></figure>
       </div>
-      <div class="photo-intro__sig"><img src="/assets/images/sig.png" alt="Louis Tesser - simulated signature"</div>
+      <article>
+        <h1>Contact Us</h1>
+        <form action="//formspree.io/louis@tessermediation.com" method="POST">
+         <fieldset>
+           <label for="name">Your name</label><br>
+           <input type="text" name="name" placeholder="Name" id="name" required>
+         </fieldset>
+         <fieldset>
+           <label for="_replyto">Your email</label><br>
+           <input type="email" name="_replyto" placeholder="example@domain.com" id="_replyto" required>
+         </fieldset>
+         <fieldset>
+           <label for="message">Your message</label><br>
+           <textarea name="message" rows="5" placeholder="Message" id="message" required></textarea>
+         </fieldset>
+         <input class="hidden" type="text" name="_gotcha" style="display:none">
+         <input class="hidden" type="hidden" name="_subject" value="Message via http://tessermediation.com">
+         <fieldset>
+          <input class="button submit" type="submit" value="Send">
+        </fieldset>
+        </form>
+      </article>
     </section>
 
 

@@ -145,7 +145,6 @@ h2.site-title {
 header {
   display: -ms-flexbox;
   display: flex;
-  margin-top: 4vw;
   border-bottom: 1px solid #000; }
   @media (max-width: 767px) {
     header {
@@ -155,7 +154,7 @@ header {
 .title {
   border-right: 1px solid #000;
   width: calc(50% - 5vw);
-  padding: 0 0 2vw 5vw; }
+  padding: 1vw 0 2vw 5vw; }
   @media (max-width: 767px) {
     .title {
       border-right: 0px;
@@ -344,3 +343,18 @@ input.button {
 
 ol li {
   margin-bottom: 1em; }
+
+a.bigbutton {
+  background: #0071bc;
+  color: #fff;
+  padding: 0.5em 1em;
+  font-style: italic;
+  font-size: 2.2vw;
+  display: inline-block;
+  margin-top: 2vw;
+  border-radius: 0.5vw;
+  transition: background-color 0.2s ease-in; }
+  a.bigbutton:hover {
+    background: #333;
+    transition: background-color 0.2s ease-out;
+    text-decoration: none; }
